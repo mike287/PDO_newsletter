@@ -12,6 +12,7 @@ session_start();
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../docs/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
 
     <title>Cover Template for Bootstrap</title>
 
@@ -45,25 +46,8 @@ session_start();
         <div class="cover-container">
 
             <div class="inner cover">
-                <h1 class="cover-heading">Zapisz się do newslettera</h1>
-                <form class="form-inline" method="post" action="save.php">
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="email" class="sr-only">email</label>
-                        <input type="email" class="form-control" name="email" id="email"
-                               placeholder="johnsnow@gmail.com"
-                            <?php if ( $_SESSION['givenEmail'] )
-                                echo 'value="' . $_SESSION['givenEmail'] . '"' ?>>
-                    </div>
-                    <button type="submit" class="btn btn-primary mb-2">Potwierdź</button>
-                </form>
-                <br>
-                <?php if ( $_SESSION['givenEmail'] )
-                {
-                    echo " <div class=\"alert alert-danger\"><strong>Błąd!</strong> Podano nieprawidłowy email</div>";
-                    unset($_SESSION['givenEmail']);
-                }
-                ?>
-
+                <h1 class="cover-heading">Zapisałeś się do listy mailingowej</h1>
+                <button type="submit" style="text-decoration: none" class="btn btn-primary mb-2"><a href="index.php">Powrót do strony głównej</a></button>
             </div>
 
             <div class="mastfoot">
