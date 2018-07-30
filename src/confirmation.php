@@ -47,7 +47,13 @@ session_start();
 
             <div class="inner cover">
                 <h1 class="cover-heading">Zapisałeś się do listy mailingowej</h1>
-                <button type="submit" style="text-decoration: none" class="btn btn-primary mb-2"><a href="index.php">Powrót do strony głównej</a></button>
+
+                <a href="index.php" style="text-decoration: none"
+                <button type="submit" id="returnButton" class="btn btn-primary mb-2">
+                    Powrót do strony głównej
+                </button>
+                </a>
+
             </div>
 
             <div class="mastfoot">
