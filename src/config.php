@@ -3,7 +3,7 @@
 return [
     'host' => 'localhost',
     'user' => 'root',
-    'password' => '',
+    'password' => '12qwaszx',
     'database' => 'newsletter'
 ];
 
