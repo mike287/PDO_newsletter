@@ -13,6 +13,7 @@ session_start();
     <meta name="author" content="">
     <link rel="icon" href="../docs/favicon.ico">
     <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <link rel="stylesheet" href="../css/css.css" type="text/css" />
 
     <title>Cover Template for Bootstrap</title>
 

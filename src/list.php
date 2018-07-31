@@ -51,6 +51,7 @@ $users          = $usersListQuery->fetchAll();
 <link rel="icon" href="../docs/favicon.ico">
 
 <title>Cover Template for Bootstrap</title>
+<link rel="stylesheet" href="css/css.css" type="text/css" />
 
 <!-- Bootstrap core CSS -->
 <link href="../dist/css/bootstrap.min.css" rel="stylesheet">

@@ -70,8 +70,17 @@ session_start();
                 <div class="inner">
                     <p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a
                                 href="https://twitter.com/mdo">@mdo</a>.</p>
+                    <footer class="footer">
+
+                        <?php
+                        require_once('../tools/counter.php');
+                        ?>
+
+
+                    </footer>
                 </div>
             </div>
+
 
         </div>
 
