@@ -5,7 +5,7 @@ require_once 'database.php';
 
 $_SESSION['adminLogin'] = $_POST['adminLogin'];
 
-if ( ($_SESSION['adminSession']) != true )
+if (isset($_SESSION['adminSession']) && ($_SESSION['adminSession']) != true )
 {
     if ( isset($_POST['adminLogin']) && isset($_POST['adminPassword']) )
     {

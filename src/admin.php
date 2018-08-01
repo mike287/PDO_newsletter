@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-if ( $_SESSION['adminSession'] == true )
+if (isset($_SESSION['adminSession']) && $_SESSION['adminSession'] == true )
 {
     header("Location: list.php");
 }
@@ -56,7 +56,7 @@ if ( $_SESSION['adminSession'] == true )
                         <label for="text" class="sr-only">email</label>
                         <input type="text" class="form-control" name="adminLogin" id="adminLogin"
                                placeholder="admin"
-                            <?php if ( $_SESSION['adminLogin'] )
+                            <?php if (isset($_SESSION['adminLogin'] ))
                                 echo 'value="' . $_SESSION['adminLogin'] . '"' ?>>
                         <label for="password" class="sr-only">password</label>
                         <input type="password" class="form-control" name="adminPassword" id="adminPassword"
@@ -65,7 +65,7 @@ if ( $_SESSION['adminSession'] == true )
                     <button type="submit" class="btn btn-primary mb-2">Zaloguj</button>
                 </form>
                 <?php
-                if ( $_SESSION['errorLog'] )
+                if (isset($_SESSION['errorLog']))
                 {
                     echo "<br>";
                     echo "<br>";
