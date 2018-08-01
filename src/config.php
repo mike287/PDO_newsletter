@@ -2,8 +2,8 @@
 
 return [
     'host' => 'localhost',
-    'user' => 'root',
-    'password' => 'coderslab',
+    'user' => '',
+    'password' => '',
     'database' => 'newsletter'
 ];
 
